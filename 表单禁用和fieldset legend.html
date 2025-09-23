@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <title>表单禁用</title>
+  </head>
+  <body>
+    <form action="https://search.jd.com/Search">
+      <fieldset>
+        <legend>
+          主要信息
+        </legend>
+        <label for="zhanghu">账户:</label>
+          <input type="text" name="account" id="zhanghu" maxlength="10"> 
+          <br>
+        <label>密码: <input type="password"name="pwd"maxlength="6"></label>
+          <br>
+          性别：
+          <input type="radio" name="gender" value="male" id="nan">
+        <label for="nan">男</label>
+        <label>
+        <input type="radio" name="gender" value="female">女
+      </label>
+        <br>
+      </fieldset>
+      <fieldset>
+        <legend>
+          次要信息
+        </legend>
+      爱好：
+      <label>
+      <input type="checkbox" name="hobby" value="smoke" >抽烟
+      </label>
+      <label>
+       <input  type="checkbox" name="hobby" value="drink">喝酒
+      </label>
+      <label>
+        <input type="checkbox" name="hobby" value="perm" >烫头
+      </label>
+      <br>
+       <label for="qita">其他：</label><textarea id="qita" name="other"cols="20" rows="3"></textarea>
+      <br>
+      籍贯：<select name="place">
+        <option value="京">北京</option>
+        <option value="沪">上海</option>
+        <option value="冀">河北</option>
+        <option value="津">天津</option>
+        </select>
+      </fieldset>
+      <br>
+      <input type="hidden" name="tag" value="123">
+      <fieldset>
+        <legend>
+          操作按钮
+        </legend>
+          
+        
+      <input type="submit" value="确认">
+      <button type="reset">点我重制</button>
+      <button type="button">检测账户是否被注册</button> 
+      </fieldset>
+         </form>
+    <!--label 关联了提示的字体与表单控件 按钮和选择框不需要使用label-->
+    <!--内容不可以放在legend标签里legend标签目前只能放文字-->
+  </body>
+</html>

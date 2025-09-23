@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <title>全局属性</title>
+    <style>
+      .student {
+        color:red;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="hello">恁好</div>
+    <div id="hello1">恁好</div>
+    <!--id相当于惟一标识，一个标识用了一个id，后面不能有相同的id，与超链接跳转锚点，表单控件，或者label css js等属性搭配使用，id属性不可在同一html文件中重复，且只能用在body里，head meta title script html style属性中不可以出现id（因为其本身都具有独一性）-->
+    <div class="student">link</div>
+    <div class="student">max</div>
+    <!--class指定标签类别 控制样式配合css一起使用-->
+    <!--style控制样式 配合css一起使用-->
+    <div style="color:green;">dog</div>
+    <bdo dir="rtl">123456789 </bdo>
+    <!--出现在bdo中等dir是控制整个文字的阅读顺序：auto/rtl/ltr-->
+    <div dir="rtl">123456789 </div>
+    <!--出现在div中的dir是控制在屏幕考左或靠右显示 和id一样，dir在head meta title script html style属性中不可以出现-->
+    <div title=needforspeed>极品飞车</div>
+    <!--鼠标悬停时显示内容，给予标签文字描述，多用于超链接，图片-->
+    <div lang="en">hello</div>
+    <!--指定标签语言和id一样，lang在head meta title script html style属性中不可以出现-->
+    <!--更多全局属性搜索mdn-->
+  </body>
+</html>

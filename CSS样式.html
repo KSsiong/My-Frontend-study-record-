@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <title>css样式 编写位置</title>
+    <link rel="stylesheet" href="./position3.css">
+    <!-- rel引入文档与当前文档的关系 href 引入自哪里- -->
+  </head>
+  <body>
+    <h1>欢迎光临</h1>
+    <!--行内样式：style 在这里时是属性 样式属性名和值用：隔开后面用分号；隔开 因为没有体现结构和样式分离，只有对元素添加少量样式时，这种css方式会偶尔使用 用于当前标签-->
+    <h2> 欢迎光临 </h2>
+    <p>need for speed</p>
+    <img src="./Imeges/IMG_2515.png" alt="IMG_2515">
+    <!--内部样式，将css样式单独提取出来写在head标签里可以复用代码清晰，结构样式并未完全分离，无法在其他html里复用 用于整个文件-->
+    <!--外部样式，就是把样式写在外部的.css文件中然后在html文件中通过link的标签引入使用，能做到结果和样式的完全分离，可以复用 触发缓存机制提高运行速度 用于多个文件-->
+  </body>
+  
+</html>
