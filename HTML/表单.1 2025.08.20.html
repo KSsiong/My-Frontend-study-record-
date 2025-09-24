@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+  </head>
+  <body>
+    <form action="https://www.baidu.com/s"><!--/s=search必要-->
+      <input type="text" name="wd">
+      <button> search </button>
+    </form>
+    <hr>
+    <form action="https://search.jd.com/Search" target="_blank" method="get"><!--/search=search必要 action=提交地址 target新地址打开方式 method=提交方式get/post-->
+      <input type="text" name="keyword">
+      <button> jdsearch </button>
+    </form>
+    <hr>
+    <a href="https://search.jd.com/Search?keyword=iphone">搜iphone</a>
+    <hr>
+    <!--表单搜集数据，超链接目前只是跳转-->
+
+    <form action="https://search.jd.com/Search">
+      account:<input type="text"name:"account" value="MAX"maxlength="10">
+      <br>
+      <!--//文本输入框//name数据名称 value 输入框默认值 maxlength最大输入长度 -->
+      password:<input type="password"name:"pwd" value="123" maxlength ="6">
+      <br>
+      <!--//密码输入框//value 一般不写，没有意义 -->
+      性别：
+      <input type="radio" name="gender" value="male">男
+      <input type="radio" name="gender" value="female"checked>女
+      <br>
+      <!--单选按钮-->
+      爱好：
+      <input type="checkbox" name="hobby" value="smoke" checked>抽烟
+      <input type="checkbox" name="hobby" value="drink">喝酒
+      <input type="checkbox" name="hobby" value="perm" checked>烫头
+      <br>
+      <!--//多选按钮//input必须写name 单选框多选框需要写value radio 单选按钮 checkbox 多选框--> 
+      其他：<textarea name="other"coles="20" rows="3"></textarea>
+      <br><!--多行输入文本域，input可以通过type属性改变用途，textarea不能使用type且input不可换行-->
+      籍贯：<select name="place">
+        <option value="京">北京</option>
+        <option value="沪">上海</option>
+        <option value="冀">河北</option>
+        <option value="津" selected>天津</option
+        </select>
+      <!--下拉菜单 只有选项才有值意味着select不能写value要写在option里面-->
+      <br>
+      <input type="hidden" name="tag" value="123"><!--用户不可见区域提交表单时附带的固定数据h-->
+    
+      <!--确认按钮第一种写法
+      <button type="submit
+      ">确认</button> 确认自带submit-->
+      <!--确认按钮第二种写法 不可写name-->
+      <input type="submit" value="确认">
+      <!--重制按钮.1 必须写type=reset-->
+      <button type="reset">点我重制</button>
+      <!--重制按钮.2 必须type=reset
+      <input type="reset" value="点我重。       制"> 注：value 控制按钮文字-->
+      <button type="button">检测账户是否被注册</button> 
+      <!-- <input type="button" value="测试账户是否被注册">需要填写type为button 否则默认为submit value在按钮里时指的是按钮上的字
+      普通按钮，不提交表单-->
+    </form>
+  </body>
+</html> 
