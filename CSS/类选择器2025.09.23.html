@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset=" UTF-8">
+    <title>类选择器</title>
+    <style>
+      /*可以为一个网页中具有相同"类名"（you/在class元素后不加.类选择器中要加.）的标签进行统一设置，可以差异化设置同一种标签，使用频率最高。
+      选中所有you这个类名的元素*/
+      .you {
+        color: silver;
+      }
+     .me {
+       color: cadetblue;
+     }
+     .big {
+       font-size:30px;
+     }
+     </style>
+  </head>
+  <body>
+    <h1>哈咯</h1>
+    <br>
+    <h2>你说：12345678</h2>
+    <p class="you">你说：123456789</p>
+    <p class="you">你说：12346789</p>
+  <!--根据class值来选择某些元素/class值=类名，不可以使用中文数字，可以英文/英文+数字/多个单词组合用-链接「left-manu」要有意义，见名知义，元素中不可一写同名的属性，一个属性可以写多个值，要用空格分开-->
+    <p class="you big">你说：12346789</p>
+    <bdo dir="rtl">你说：12346789 &amp;</bdo>
+    <br>
+    <h1>哈咯</h1>
+    <br>
+    <h2>12345678</h2>
+    <p class="me">我说：123456789</p>
+    <p class="me">我说：12346789</p>
+    <p class="me">我说：12346789</p>
+    <bdo dir="rtl">我说：12346789 &amp;</bdo>
+
+    
+    
+  </body>
+</html>

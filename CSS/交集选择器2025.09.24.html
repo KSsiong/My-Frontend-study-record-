@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <title>交集选择器</title>
+    <style>
+      .first {
+        color:red;
+      }
+      .king {
+        color:green;
+      }
+      /* 标准写法（含有类名king的p元素），使用次数很多*/
+      p.king {
+        color:blue
+      }
+      /*选中带有first 和 king的类名（可以有两个类名但是不可以有两个元素如p+span 此类使用较少）*/
+      .first.king {
+        color:yellowgreen
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 同时选中多个条件的元素（即。。又。。）
+    id选择器可以当作交集使用条件，但是因为没有意义所以没人使用-->
+    <h2 class="first">max</h2>
+    <h2 class="king">rus</h2>
+    <h2 class="first king">ham</h2>
+    <hr>
+    <p class="king">cat yuki</p>
+    <p class="king">dog alb</p>
+  </body>
+</html>
